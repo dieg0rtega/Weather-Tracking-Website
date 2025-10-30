@@ -1,47 +1,62 @@
+<!-- Start most html code with an "!" and press enter, sets up basic website elements -->
 <!DOCTYPE html>
-
 <html lang="en">
 
+<!-- <head> is the setup of contents within the tab of the webpage, usually found at the top of the browser -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sweater Weather</title>
+    <!-- <title> is used for the text seen on the tab of a webpage -->
+    <title>Sweater Weather Tracker</title>
+    <!-- <link> links to the CSS file(s), usually placed here in the head -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
+<!-- <body> contains the contents of the actual webpage -->
 <body>
-    <header>
-        <h1>Sweater Weather</h1>
-        <p>Get your info on accurate weather reporting. From rain to strong winds, or delightful news of a cool sunny day, we have you covered here in Sweater Weather.</p>
-        <div>
-            <label for="">City/Zip Code:</label>
-            <input type="text" id="location-Input" placeholder="Enter city or zip code" class="location-input">   
+    <!-- <header> often times contains the general information or navigation bar of a website -->
+    <header class="site-header">
+        <h1 class="header-title">Sweater Weather Tracker</h1>
+        <p class="header-text">Get your info on accurate weather reporting. From rain to strong winds, or delightful news of a cool sunny day, we have you covered here in Sweater Weather.</p>
+        <!-- Input Location Info -->
+        <div class="location-container">
+            <label for="" class="location-label">City/Zip Code:</label>
+            <input type="text" id="location-input" placeholder="Enter city or zip code" class="location-input">   
         </div>
     </header>
-    <section>
-        <div>
-            <img src="sunny-weather.jpg" alt="Depicting the forecast" id="forecastImage">
-            <div>
+
+    <!-- <section> groups a block of HTML elements -->
+    <section class="main-container">
+        <div class="forecast-container">
+            <!-- Weather Condition Background Image -->
+            <img 
+                src="./images/sunny.jpg"
+                alt="Depicting the forecast" 
+                id="forecast-img"
+            />
+            <!-- Generated Forecast Details  -->
+            <div class="forecast-info">
                 <h3>Forecast</h3>
                 <ul>
-                    <li>
+                    <li class="forecast-detail">
                         <div>
                             <h4>Date</h4>
                             <span id="date-detail">Oct 16th, 2025</span>
                         </div>
                     </li>
-                    <li>
+                    <li class="forecast-detail">
                         <div>
                             <h4>Weather</h4>
                             <span id="weather-detail">Sunny</span>
                         </div>
                     </li>
-                    <li>
+                    <li class="forecast-detail">
                         <div>
                             <h4>Temperature</h4>
-                            <span id="temperature-detail">80 F*</span>
+                            <span id="temp-detail">80 F*</span>
                         </div>
                     </li>
-                    <li>
+                    <li class="forecast-detail">
                         <div>
                             <h4>Humidity</h4>
                             <span id="humidity-detail">50%</span>
@@ -50,16 +65,20 @@
                 </ul>
             </div>
         </div>
-        <div>
+        <!-- Navigate Between Days and Load Forecast Details -->
+        <div class="forecast-controls">
             <button id="prev-button">Previous Day</button>
             <button id="weather-button">Get Weather</button>
             <button id="next-button">Next Day</button>
         </div>
     </section>
+
+    <!-- <footer> contains any extra info about a website, such as contact information, history, extra resources, etc. -->
     <footer>
+        <!-- Copyrigth and My Website Links -->
         <ul>
             <li>
-                <p>&copy; 2025 Sweater Weather Inc.</p>
+                <p>&copy; 2025 Sweater Weather Tracker Inc.</p>
             </li>
             <li>
                 <a href="https://www.linkedin.com/in/diego-ortega-50a6971a5/">LinkedIn</a>
@@ -69,6 +88,7 @@
             </li>
         </ul>
     </footer>
+    <!-- <script> links to the Javascript file(s), usually placed at the end of the body  -->
     <script type="module" src="script.js"></script>
 </body>
 

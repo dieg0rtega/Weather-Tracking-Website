@@ -1,0 +1,193 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+body {
+    background-color: #FAF0F6;
+
+    margin: 1rem 4rem;
+}
+
+.site-header {
+    text-align: center;
+
+    padding: 1rem 0 1rem 1rem;
+    margin: 2rem 0;
+
+    border: 5px solid #579ec6;
+    border-radius: 1rem;
+}
+
+.header-title { /* basic attributes, values, basic syntax */
+    font-size: 36px;
+    color: #003859;
+
+    padding-bottom: 15px;
+}
+
+.header-text {
+    font-size: 1.2rem;
+}
+
+/* Location input ---------------------------------- */ 
+
+.location-container {
+    margin-top: 2rem;
+}
+
+.location-label {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.location-input {
+    width: 200px;
+
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.main-container {
+    background-color: #579ec6;
+
+    border-radius: 1rem;
+    padding: 1.5rem 0.5rem;
+}
+
+.main-container div {
+    margin: 0rem 1rem;
+}
+
+.date {
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    margin: 1rem 0rem;
+}
+
+.forecast-container {
+    padding: 1rem 4rem;
+    
+    border: none;
+    border-radius: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    width: 600px;
+
+    border: none;
+    border-radius: 1rem;
+
+    box-shadow: -10px 10px #003859;
+}
+
+.forecast-info {
+    background-color: #90d5ff;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 10px -10px #003859;
+
+    width: 100%;
+}
+
+.forecast-info h3 {
+    color: #003859;
+    font-size: 2rem;
+    font-weight: lighter;
+
+    margin-bottom: 0.5rem;
+}
+
+.forecast-info ul {
+    padding: 0;
+}
+
+.forecast-detail {
+    font-size: 1.4rem;
+    background-color: #e6f4f1;
+
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+
+    width: 100%;
+    height: auto;
+
+    list-style-type: none;
+    box-shadow: 5px 5px 10px #888;
+}
+
+.forecast-detail h4 {
+    font-weight: bold;
+}
+
+.forecast-detail span {
+    font-weight: lighter;
+}
+
+.forecast-controls {
+    padding: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* In the case that we need to select multiple
+classes to have the same styles */
+.forecast-controls button, .weather-button {
+    font-size: 1.2rem;
+    background-color: #003859;
+    color: white;
+
+    font-weight: bold;
+
+    border: none;
+    border-radius: 1rem;
+    padding: 10px 16px;
+}
+
+.weather-button {
+    display: block;
+    margin: auto;
+}
+
+footer {
+    padding: 20px;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: solid 1px #003859;
+    background-color: #90d5ff;
+}
+
+footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 30px;
+
+    list-style-type: none;
+}
+
+a {
+    color: #003859;
+    text-decoration: none;
+    font-size: 0.9rem;
+
+    transition: color ease-in-out 0.2s;
+}
+
+a:hover {
+    color: deepskyblue;
+}
+
+/* a:active {
+    color: red;
+} */
